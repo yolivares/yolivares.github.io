@@ -1,0 +1,23 @@
+<head>
+<script>
+   var yourSpouse = ["Raymond", "Juan", "Jose"];
+  var yourCity = ["Dallas", "Los Angeles", "Dubai"];
+  var yourJob = ["Teacher", "Coach", "Sonography"];
+  var yourKids = [1,2,3];
+  function flipCoin(max) {
+    return Math.floor(Math.random() * Math.floor(max))
+  }
+</script>
+</head>
+
+<html>
+  <body>
+    <h1>The Fortune Teller</h1>
+    <p>Your future!!</p>
+    <script>
+      fortune = flipCoin(3) + 1;
+      document.write("<p>In the future, you will be married to " + yourSpouse[fortune] + " and live in " + yourCity[fortune] + "!!</p>");
+      document.write("<p>You will work as a " + yourJob[fortune] + " and have " + yourKids[fortune] + " kids!</p>");
+    </script>
+  </body>
+</html>
