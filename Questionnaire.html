@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<title> Arrays and Loops </title>
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+
+  var name = prompt("Please enter your name", "John Doe");
+  if (name != null) 
+  var address =prompt("Please enter your address", "Address");
+  if (address != null)
+  var phone = prompt("Please enter your Phone Number", "(000)-000-0000");
+  if (phone != null)
+    var age = prompt("Please enter your Age", "Age");
+  if (phone != null)
+   
+  var info = [name, address, phone, age];
+  var a;
+document.write("Thank you for your information! You Supplied This Information:");
+    for (a of info){
+      document.write( "<br>" +a + "<br >");
+    
+    }
+}
+</script>
+ 
+ 
+</html>
