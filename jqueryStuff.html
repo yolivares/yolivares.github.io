@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="Samples.css">
+	<title>jQuery SlideDown and SlideUp</title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript"> 
+    /* <![CDATA[ */
+    $(document).ready(function(){
+    $(".flip").mouseover(function(){
+        $(".panel").slideDown("slow");
+      });
+    $(".flip").mouseout(function(){
+        $(".panel").slideUp("slow");
+      });
+    });
+    /* ]]> */
+  </script>
+  <style type="text/css"> 
+  div.panel,p.flip
+  {
+    margin:0px;
+    padding:15px;
+    text-align:justify;
+    background:#e5eecc;
+    border:solid 1px #c3c3c3;
+  }
+  div.panel
+  {
+    height:380px;
+    display:none;
+    border-radius: 10px;
+  }
+  p {
+    margin: 1em 0;
+  }
+  #instructions
+  {
+  	font-family: Arial, sans-serif;
+  	font-size: 1.3em;
+  	position: absolute;
+  	top: 480px;
+    margin: 0 auto;
+  }
+  img {
+    position: absolute;
+    left: 200px;
+    top: 140px;
+  }
+  #mainDiv {
+    height: 420px;
+  }
+  </style>
+</head>
+ 
+<body>
+  <div id="mainDiv">
+    <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et metus sapien, 
+    nec consectetur massa. Pellentesque imperdiet mi sed magna ullamcorper sed viverra 
+    libero faucibus. Vivamus vel tellus eros. Vestibulum vulputate dictum erat vel 
+    vestibulum. Nunc at leo enim, non suscipit sapien. Fusce a gravida sem. Mauris 
+    mauris odio, pellentesque.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pretium nisi 
+    et diam pretium at fermentum sapien mollis. Sed ut dolor in felis fermentum ornare. 
+    Suspendisse venenatis, odio in vehicula venenatis, neque sem luctus neque, vitae 
+    interdum nunc mauris ut magna. Suspendisse ultrices ultricies pellentesque. Fusce 
+    sed massa augue. Quisque.</p>
+    </div>
+     
+    <img src="images/doggy.jpg" class="flip" width="266" height="266" alt="" title="" />
+
+    <div id="instructions">
+      <p>
+        Move your mouse cursor over the image to see the slide-down effect.
+      </p>
+      <p>
+        Move your mouse cursor off the image to see the slide-up effect.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
