@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Canvas Sample</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="canvasStyles.css" media="screen">
+</head>
+<body>
+  <div id="mainDiv">
+    <header>
+      <h3>Screem while coding</h3>
+    </header>
+    
+    <section>
+      <h4>Here is my canvas tag:</h4>
+      
+</canvas>
+    </section>
+    <footer>
+      © 2021
+    </footer>
+  </div>
+  <img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
+  <script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var img = document.getElementById("scream");
+ctx.drawImage(img, 10, 10);
+  </script>
+
+</body>
+</html>
